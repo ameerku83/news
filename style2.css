@@ -1,0 +1,32 @@
+.outer-wraper{
+    display: flex;
+}
+.outer-wraper > div{
+    flex: 1;
+}
+body{
+    background-color: aquamarine;
+}
+.outer-wraper :first-child{
+    background-color: blue;   
+}
+.outer-wraper :last-child{
+    background-color: red;
+}
+@media screen and (max-width:700px){
+    body{
+        background-color: blue;
+    }
+    .outer-wraper{
+        display: block;
+    }
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(14, 219, 68);
+    }
+    .outer-wraper{
+        display: block;
+    }
+}
+
